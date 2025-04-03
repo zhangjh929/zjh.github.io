@@ -1,6 +1,6 @@
 /* 设置整个页面的背景图 */
 body {
-  background-image: url('background.jpg'); /* 图像路径 */
+  background-image: url('IMG_4766.jpeg'); /* 图像路径 */
   background-size: cover; /* 背景图像填充整个屏幕 */
   background-position: center center; /* 图像居中显示 */
   background-attachment: fixed; /* 背景图固定，不随页面滚动 */
