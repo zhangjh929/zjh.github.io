@@ -1,0 +1,22 @@
+/* 设置整个页面的背景图 */
+body {
+  background-image: url('background.jpg'); /* 图像路径 */
+  background-size: cover; /* 背景图像填充整个屏幕 */
+  background-position: center center; /* 图像居中显示 */
+  background-attachment: fixed; /* 背景图固定，不随页面滚动 */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white; /* 设置文本颜色为白色，确保与背景有足够的对比 */
+}
+
+/* 其他样式 */
+header {
+  background-color: rgba(0, 0, 0, 0.5); /* 透明背景色，使文字更易阅读 */
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+}
