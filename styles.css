@@ -4,6 +4,7 @@ body {
   background-size: cover; /* 背景图像填充整个屏幕 */
   background-position: center center; /* 图像居中显示 */
   background-attachment: fixed; /* 背景图固定，不随页面滚动 */
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -12,11 +13,41 @@ body {
 
 /* 其他样式 */
 header {
-  background-color: rgba(0, 0, 0, 0.5); /* 透明背景色，使文字更易阅读 */
+  background-color: #333;
+  color: white;
   padding: 20px;
   text-align: center;
 }
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  color: #333;
+}
+
 section {
   padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
