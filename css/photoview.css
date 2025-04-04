@@ -40,6 +40,8 @@ section {
 img {
   max-width: 100%;
   height: auto;
+  max-height: 100vh;      /* 高度最多不能超过视口（屏幕）高度 */
+  object-fit: contain;    /* 确保图片完整显示不裁剪 */
   display: block;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
