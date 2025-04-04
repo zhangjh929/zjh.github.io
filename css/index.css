@@ -9,6 +9,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   color: white; /* 设置文本颜色为白色，确保与背景有足够的对比 */
+  margin-bottom: 40px;
 }
 
 /* 其他样式 */
