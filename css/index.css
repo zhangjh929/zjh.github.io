@@ -1,0 +1,53 @@
+/* 设置整个页面的背景图 */
+body {
+  background-image: url('../image/IMG_4766.jpeg'); /* 图像路径 */
+  background-size: cover; /* 背景图像填充整个屏幕 */
+  background-position: center center; /* 图像居中显示 */
+  background-attachment: fixed; /* 背景图固定，不随页面滚动 */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white; /* 设置文本颜色为白色，确保与背景有足够的对比 */
+}
+
+/* 其他样式 */
+header {
+  background-color: #999999;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  color: white;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
