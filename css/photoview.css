@@ -1,19 +1,12 @@
-/* 设置整个页面的背景图 */
 body {
-  background-image: url('../image/guitarbr.jpg'); /* 图像路径 */
-  background-size: cover; /* 背景图像填充整个屏幕 */
-  background-position: center center; /* 图像居中显示 */
-  background-attachment: fixed; /* 背景图固定，不随页面滚动 */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  color: white; /* 设置文本颜色为白色，确保与背景有足够的对比 */
+  background-color: #f4f4f4;
 }
 
-/* 其他样式 */
 header {
-  background-color: #999999;
+  background-color: #333;
   color: white;
   padding: 20px;
   text-align: center;
@@ -36,13 +29,15 @@ nav ul li a {
 }
 
 h2 {
-  color: white;
+  color: #333;
 }
 
 section {
   padding: 20px;
 }
 
+
+/* 下端信息 */
 footer {
   background-color: #333;
   color: white;
@@ -51,7 +46,6 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
-  list-style: none;
 }
 
 footer a {
@@ -63,6 +57,7 @@ footer a:hover {
   color: #ddd;  /* 鼠标悬停时可以稍微变亮 */
 }
 
+
 /* 文字的位置*(左，右，居中) */
 .left-text {
   text-align: left;
@@ -72,4 +67,15 @@ footer a:hover {
 }
 .center-text {
   text-align: center;
+}
+
+/* 并排不换行 */
+.button-list {
+  display: flex;           /* 让 <li> 们一行排开 */
+  justify-content: space-between; /* 左右两边对齐 */
+  list-style: none;        /* 去掉前面的圆点 */
+  padding: 0 50px;  /* 左右留 50px 空隙 */
+  margin: 0;
+  width: 100%; 
+  box-sizing: border-box; /* 让 padding 也算入宽度 */
 }

@@ -20,8 +20,9 @@ header {
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav ul li {
@@ -42,6 +43,7 @@ section {
   padding: 20px;
 }
 
+/* 下端信息 */
 footer {
   background-color: #333;
   color: white;
@@ -50,4 +52,26 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+  list-style: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;  /* 如果你不想要下划线 */
+}
+
+footer a:hover {
+  color: #ddd;  /* 鼠标悬停时可以稍微变亮 */
+}
+
+
+/* 文字的位置*(左，右，居中) */
+.left-text {
+  text-align: left;
+}
+.right-text {
+  text-align: right;
+}
+.center-text {
+  text-align: center;
 }
