@@ -19,13 +19,46 @@ body::after {
 
 /* 页眉样式 */
 header {
-  background-color: rgba(102, 51, 0, 0.85); /* 木质棕色，带透明度 */
-  color: #fff8f0;
+  background-color: rgba(102, 51, 0, 0.85);
+  color: #f5deb3;
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   border-bottom: 2px solid #3e1f0e;
 }
+
+/* 标题样式 */
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  color: #f5deb3;
+}
+
+/* 导航横向排列 */
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;               /* 横向排列 */
+  justify-content: center;    /* 居中对齐 */
+  gap: 30px;                  /* 项目间距 */
+}
+
+/* 链接样式 */
+header nav ul li a {
+  color: #f5deb3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px 10px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
 
 /* 导航栏 */
 nav ul {
@@ -34,18 +67,18 @@ nav ul {
   margin: 0;
 }
 
-nav ul li {
+nav ul p {
   display: inline;
   margin: 0 15px;
 }
 
-nav ul li a {
+nav ul p a {
   color: #ffe4c4; /* 米白色文字 */
   text-decoration: none;
   font-weight: bold;
 }
 
-nav ul li a:hover {
+nav ul p a:hover {
   text-decoration: underline;
   color: #f0d5b1;
 }
