@@ -1,44 +1,126 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>老张的blog</title>
-  <link rel="stylesheet" href="css/index.css">
+  <title>老张的主页</title>
+  <meta name="description" content="老张的个人主页，收录 IT、古典吉他与摄影作品。">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <header>
-    <h1>欢迎来到老张的blog</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">关于老张</a></li>
-        <li><a href="#skills">技能</a></li>
-        <li><a href="#contact">联系我</a></li>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="主导航">
+      <a class="brand" href="index.html">老张的主页</a>
+      <ul class="nav-links">
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#collections">精选内容</a></li>
+        <li><a href="#contact">联系说明</a></li>
       </ul>
     </nav>
   </header>
 
-  <section>
-    <h2>关于老张</h2>
-    <p>这里可以看到老张的一些基本信息，比如职业、兴趣爱好等。</p>
-  </section>
+  <main class="page">
+    <section class="hero" id="about">
+      <div>
+        <span class="eyebrow">Personal Collection</span>
+        <h1>把日常兴趣，做成一座安静的线上展厅。</h1>
+        <p>
+          这里收集了老张关心的几件事: IT 与开发、古典吉他的练习片段，还有旅行途中拍下来的照片。
+          我参考了 Apple Store 首页那种简洁、留白充足、内容卡片化的节奏，把这个站点重新整理成更清楚也更舒服的样子。
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#collections">浏览内容</a>
+          <a class="button-secondary" href="html/photohome.html">先看摄影</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-panel">
+          <img src="image/indexbr.jpeg" alt="">
+        </div>
+        <div class="visual-badge">
+          <strong>IT / Guitar / Photo</strong>
+          <span>三个主题，统一成一套更轻盈的浏览体验。</span>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>老张的技能</h2>
-    <ul>
-      <p><a href="html/ithome.html" class="button">IT知识</a></p>
-      <p><a href="html/classicguitar.html" class="button">古典吉他</a></p>
-      <p><a href="html/photohome.html" class="button">摄影</a></p>
-    </ul>
-  </section>
+    <section class="section">
+      <div class="section-head">
+        <h2>内容概览。</h2>
+        <p>用更少的装饰和更清晰的层级，让每一块内容都像独立橱窗一样被看见。</p>
+      </div>
+      <div class="stats">
+        <article class="stat">
+          <strong>3 个主题</strong>
+          <span>开发、音乐、摄影</span>
+        </article>
+        <article class="stat">
+          <strong>4 段音频</strong>
+          <span>古典吉他练习记录</span>
+        </article>
+        <article class="stat">
+          <strong>2 组照片</strong>
+          <span>旅行与自然观察</span>
+        </article>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>老张的联系方式</h2>
-    <p>不要联系，不要联系，不要联系。</p>
-  </section>
+    <section class="section" id="collections">
+      <div class="section-head">
+        <h2>精选内容。</h2>
+        <p>每个入口都保留原本的主题，但换成更统一的卡片样式与阅读顺序。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <span class="tag">IT</span>
+          <h3>开发与技术</h3>
+          <p>整理老张对网页开发、技术学习与数字工具的兴趣，让这个版块更像一张简洁的个人名片。</p>
+          <a class="button-secondary" href="html/ithome.html">进入页面</a>
+        </article>
+        <article class="card">
+          <span class="tag">Music</span>
+          <h3>古典吉他</h3>
+          <p>把练习曲和片段集中展示，页面重点放在曲目本身、播放体验与安静的聆听氛围。</p>
+          <a class="button-secondary" href="html/classicguitar.html">试听音频</a>
+        </article>
+        <article class="card">
+          <span class="tag">Photo</span>
+          <h3>摄影作品</h3>
+          <p>从海边飞鸟到北海道湖面，照片会以更大的卡片和更干净的文字说明来呈现。</p>
+          <a class="button-secondary" href="html/photohome.html">查看作品</a>
+        </article>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 我的个人网站</p>
+    <section class="section" id="contact">
+      <div class="section-head">
+        <h2>联系说明。</h2>
+        <p>这一页目前主要作为个人展示站使用，所以暂时不开放公开联系方式。</p>
+      </div>
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="tag">About</span>
+          <h3>关于这个站点</h3>
+          <p>这次更新修复了原有页面的文字编码问题，也重做了结构、间距、按钮和卡片系统。</p>
+        </article>
+        <article class="info-card">
+          <span class="tag">Contact</span>
+          <h3>暂不公开联系</h3>
+          <p>如果之后你想加邮箱、社交账号或 GitHub 链接，这一块可以继续扩展成正式的联系区。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bar">
+      <span>&copy; 2025 老张的主页</span>
+      <div class="footer-links">
+        <a href="#about">关于我</a>
+        <a href="#collections">精选内容</a>
+        <a href="#contact">联系说明</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>

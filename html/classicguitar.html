@@ -1,52 +1,102 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>关于古典吉他</title>
-  <link rel="stylesheet" href="../css/guitar.css">
+  <title>古典吉他</title>
+  <meta name="description" content="老张的古典吉他音频记录页。">
+  <link rel="stylesheet" href="../css/site.css">
 </head>
 <body>
-  <header>
-    <h1>关于古典吉他</h1>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="页面导航">
+      <a class="brand" href="../index.html">老张的主页</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">主页</a></li>
+        <li><a href="#tracks">曲目</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
-    <h2>肖邦 9-1</h2>
-    <audio controls>
-      <source src="../audio/肖邦夜曲 9-1.m4a" type="audio/mp4">
-      您的浏览器不支持音频播放。
-    </audio>
-  </section>
+  <main class="page">
+    <section class="page-hero">
+      <div>
+        <span class="eyebrow">Music</span>
+        <h1>给练习留下一个可以慢慢回听的地方。</h1>
+        <p>
+          这里收录了几段古典吉他音频。页面视觉尽量保持安静，让注意力停留在曲目、节奏和每一次练习的变化上。
+        </p>
+        <div class="button-row">
+          <a class="button" href="#tracks">开始试听</a>
+          <a class="button-secondary" href="../index.html">回到主页</a>
+        </div>
+      </div>
+      <div class="page-hero-visual" aria-hidden="true">
+        <div class="visual-panel">
+          <img src="../image/guitarbr.jpg" alt="">
+        </div>
+        <div class="visual-badge">
+          <strong>Classical Guitar</strong>
+          <span>四段音频，按卡片方式集中展示。</span>
+        </div>
+      </div>
+    </section>
 
+    <section class="section" id="tracks">
+      <div class="section-head">
+        <h2>曲目列表。</h2>
+        <p>把每一段音频独立成卡片，信息更清楚，试听体验也更集中。</p>
+      </div>
+      <div class="audio-grid">
+        <article class="audio-card">
+          <span class="tag">Track 01</span>
+          <h3>肖邦夜曲 9-1</h3>
+          <p>一段偏安静、偏细腻的练习记录，适合从第一首开始进入这页的节奏。</p>
+          <audio controls>
+            <source src="../audio/肖邦夜曲 9-1.m4a" type="audio/mp4">
+            您的浏览器不支持音频播放。
+          </audio>
+        </article>
+        <article class="audio-card">
+          <span class="tag">Track 02</span>
+          <h3>肖邦夜曲 9-2</h3>
+          <p>和前一首相邻摆放，方便连续回听，也更容易对比不同片段之间的感觉。</p>
+          <audio controls>
+            <source src="../audio/肖邦夜曲 9-2.m4a" type="audio/mp4">
+            您的浏览器不支持音频播放。
+          </audio>
+        </article>
+        <article class="audio-card">
+          <span class="tag">Track 03</span>
+          <h3>水神审判</h3>
+          <p>情绪更明显的一段，放在同一页面里，能让整个吉他版块的层次更丰富。</p>
+          <audio controls>
+            <source src="../audio/水神 吉他.m4a" type="audio/mp4">
+            您的浏览器不支持音频播放。
+          </audio>
+        </article>
+        <article class="audio-card">
+          <span class="tag">Track 04</span>
+          <h3>安逸的静水</h3>
+          <p>作为收束感较强的一段，适合放在页面尾部，形成更平静的结束。</p>
+          <audio controls>
+            <source src="../audio/安逸的静水.m4a" type="audio/mp4">
+            您的浏览器不支持音频播放。
+          </audio>
+        </article>
+      </div>
+    </section>
 
-  <section>
-    <h2>肖邦 9-2</h2>
-    <audio controls>
-      <source src="../audio/肖邦夜曲 9-2.m4a" type="audio/mp4">
-      您的浏览器不支持音频播放。
-    </audio>
-  </section>
+  </main>
 
-
-  <section>
-    <h2>水神审判</h2>
-    <audio controls>
-      <source src="../audio/水神 吉他.m4a" type="audio/mp4">
-      您的浏览器不支持音频播放。
-    </audio>
-  </section>
-
-  <section>
-    <h2>安逸的静水</h2>
-    <audio controls>
-      <source src="../audio/安逸的静水.m4a" type="audio/mp4">
-      您的浏览器不支持音频播放。
-    </audio>
-  </section>
-
-  <footer>
-    <p><a href="../index.html" class="button">回到主页</a></p>
+  <footer class="site-footer">
+    <div class="footer-bar">
+      <span>古典吉他</span>
+      <div class="footer-links">
+        <a href="../index.html">主页</a>
+        <a href="#tracks">曲目</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

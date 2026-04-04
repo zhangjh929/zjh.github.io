@@ -1,25 +1,77 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>肖肖的摄影作品</title>
-  <link rel="stylesheet" href="../css/photoview.css">
+  <meta name="description" content="肖肖的摄影作品页。">
+  <link rel="stylesheet" href="../css/site.css">
 </head>
 <body>
-  <header>
-    <h1>肖肖的摄影作品</h1>
-    <nav>
-      <ul>
-        <li>以下是肖肖的一些摄影作品。</li>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="页面导航">
+      <a class="brand" href="../index.html">老张的主页</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">主页</a></li>
+        <li><a href="photohome.html">摄影入口</a></li>
+        <li><a href="#status">当前状态</a></li>
       </ul>
     </nav>
   </header>
 
+  <main class="page">
+    <section class="page-hero">
+      <div>
+        <span class="eyebrow">Gallery</span>
+        <h1>肖肖的摄影作品。</h1>
+        <p>
+          这个页面已经保留好和整体风格一致的版式。等你之后把照片放进来时，
+          只需要继续往下添加作品卡片，不必重新调整页面框架。
+        </p>
+        <div class="button-row">
+          <a class="button" href="photohome.html">返回摄影入口</a>
+          <a class="button-secondary" href="../index.html">回到主页</a>
+        </div>
+      </div>
+      <div class="page-hero-visual" aria-hidden="true">
+        <div class="visual-panel">
+          <img src="../image/indexbr.jpeg" alt="">
+        </div>
+        <div class="visual-badge">
+          <strong>Ready for new photos</strong>
+          <span>结构已准备好，后续只需补充图片与文字。</span>
+        </div>
+      </div>
+    </section>
 
-  <footer class="button-list">
-    <li class="left-text"><a href="photohome.html" class="button">返回</a></li>
-    <li class="right-text"><a href="../index.html" class="button">回到主页</a></li>
+    <section class="section" id="status">
+      <div class="section-head">
+        <h2>当前状态。</h2>
+        <p>先保留一个简洁的占位页，避免空白页面看起来像错误或未完成。</p>
+      </div>
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="tag">Status</span>
+          <h3>等待上传作品</h3>
+          <p>目前这页还没有正式照片，等素材准备好之后，我可以继续帮你排版成完整画廊。</p>
+        </article>
+        <article class="info-card">
+          <span class="tag">Next</span>
+          <h3>可继续扩展</h3>
+          <p>支持继续加入拍摄地点、日期、图片说明，或者改成更偏作品集风格的瀑布流页面。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bar">
+      <span>肖肖的摄影作品</span>
+      <div class="footer-links">
+        <a href="photohome.html">摄影入口</a>
+        <a href="../index.html">主页</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
