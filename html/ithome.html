@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT 与开发</title>
-  <meta name="description" content="老张的 IT 与开发兴趣页。">
+  <title data-i18n="title">IT 与开发</title>
+  <meta name="description" content="老张的 IT 与开发兴趣页。" data-i18n="description">
   <link rel="stylesheet" href="../css/site.css">
 </head>
-<body>
+<body data-page="ithome">
   <header class="site-header">
-    <nav class="site-nav" aria-label="页面导航">
-      <a class="brand" href="../index.html">老张的主页</a>
+    <nav class="site-nav" data-i18n-aria="navLabel" aria-label="页面导航">
+      <a class="brand" href="../index.html" data-i18n="brand">老张的主页</a>
       <ul class="nav-links">
-        <li><a href="../index.html">主页</a></li>
-        <li><a href="#focus">关注点</a></li>
-        <li><a href="#notes">说明</a></li>
+        <li><a href="../index.html" data-i18n="navHome">主页</a></li>
+        <li><a href="#focus" data-i18n="navFocus">关注点</a></li>
+        <li><a href="#notes" data-i18n="navNotes">说明</a></li>
       </ul>
+      <div class="language-switch">
+        <label for="language-select" data-i18n="langLabel">语言</label>
+        <select id="language-select">
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+        </select>
+      </div>
     </nav>
   </header>
 
@@ -23,13 +30,10 @@
     <section class="page-hero">
       <div>
         <span class="eyebrow">IT</span>
-        <h1>技术学习，也值得被认真展示。</h1>
-        <p>
-          这个页面用来介绍老张在网页开发与数字技术上的兴趣。现在先保留成一张清爽的介绍页，
-          之后也可以继续加入项目经历、正在学习的主题、常用工具和作品链接。
-        </p>
+        <h1 data-i18n="heroTitle">技术学习，也值得被认真展示。</h1>
+        <p data-i18n="heroBody">这个页面用来介绍老张在网页开发与数字技术上的兴趣。现在先保留成一张清爽的介绍页，之后也可以继续加入项目经历、正在学习的主题、常用工具和作品链接。</p>
         <div class="button-row">
-          <a class="button" href="../index.html">回到主页</a>
+          <a class="button" href="../index.html" data-i18n="heroPrimary">回到主页</a>
         </div>
       </div>
       <div class="page-hero-visual" aria-hidden="true">
@@ -38,50 +42,50 @@
         </div>
         <div class="visual-badge">
           <strong>Build for clarity</strong>
-          <span>把技术兴趣整理成更易读的个人展示内容。</span>
+          <span data-i18n="badge">把技术兴趣整理成更易读的个人展示内容。</span>
         </div>
       </div>
     </section>
 
     <section class="section" id="focus">
       <div class="section-head">
-        <h2>当前关注。</h2>
-        <p>这里先用三块简洁的卡片，概括这个版块接下来可以继续扩展的方向。</p>
+        <h2 data-i18n="focusTitle">当前关注。</h2>
+        <p data-i18n="focusBody">这里先用三块简洁的卡片，概括这个版块接下来可以继续扩展的方向。</p>
       </div>
       <div class="card-grid">
         <article class="card">
           <span class="tag">Web</span>
-          <h3>网页开发</h3>
-          <p>从页面结构、视觉样式到交互细节，逐步把内容做成更稳定也更舒服的网站。</p>
+          <h3 data-i18n="webTitle">网页开发</h3>
+          <p data-i18n="webBody">从页面结构、视觉样式到交互细节，逐步把内容做成更稳定也更舒服的网站。</p>
         </article>
         <article class="card">
           <span class="tag">Learning</span>
-          <h3>持续学习</h3>
-          <p>把零散的知识整理成能长期使用的页面，而不是只停留在临时笔记里。</p>
+          <h3 data-i18n="learnTitle">持续学习</h3>
+          <p data-i18n="learnBody">把零散的知识整理成能长期使用的页面，而不是只停留在临时笔记里。</p>
         </article>
         <article class="card">
           <span class="tag">Tools</span>
-          <h3>数字工具</h3>
-          <p>用合适的工具减少重复工作，让兴趣、记录和展示可以自然地连接起来。</p>
+          <h3 data-i18n="toolsTitle">数字工具</h3>
+          <p data-i18n="toolsBody">用合适的工具减少重复工作，让兴趣、记录和展示可以自然地连接起来。</p>
         </article>
       </div>
     </section>
 
     <section class="section" id="notes">
       <div class="section-head">
-        <h2>后续可以追加什么。</h2>
-        <p>如果你愿意，下一步我也可以把这里继续扩展成更完整的个人开发页面。</p>
+        <h2 data-i18n="notesTitle">后续可以追加什么。</h2>
+        <p data-i18n="notesBody">如果你愿意，下一步我也可以把这里继续扩展成更完整的个人开发页面。</p>
       </div>
       <div class="info-grid">
         <article class="info-card">
           <span class="tag">Option</span>
-          <h3>项目经历</h3>
-          <p>加入你做过的网站、练习项目或正在制作中的页面，让访客更快理解你的方向。</p>
+          <h3 data-i18n="projectTitle">项目经历</h3>
+          <p data-i18n="projectBody">加入你做过的网站、练习项目或正在制作中的页面，让访客更快理解你的方向。</p>
         </article>
         <article class="info-card">
           <span class="tag">Option</span>
-          <h3>技能标签</h3>
-          <p>例如 HTML、CSS、JavaScript、Git 或你平常在用的设计与写作工具。</p>
+          <h3 data-i18n="skillsTitle">技能标签</h3>
+          <p data-i18n="skillsBody">例如 HTML、CSS、JavaScript、Git 或你平常在用的设计与写作工具。</p>
         </article>
       </div>
     </section>
@@ -89,13 +93,14 @@
 
   <footer class="site-footer">
     <div class="footer-bar">
-      <span>IT 与开发</span>
+      <span data-i18n="footerBrand">IT 与开发</span>
       <div class="footer-links">
-        <a href="../index.html">主页</a>
-        <a href="#focus">当前关注</a>
-        <a href="#notes">后续扩展</a>
+        <a href="../index.html" data-i18n="footerHome">主页</a>
+        <a href="#focus" data-i18n="footerFocus">当前关注</a>
+        <a href="#notes" data-i18n="footerNotes">后续扩展</a>
       </div>
     </div>
   </footer>
+  <script src="../script.js"></script>
 </body>
 </html>

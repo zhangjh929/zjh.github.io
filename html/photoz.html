@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>老张的摄影作品</title>
-  <meta name="description" content="老张的摄影作品页。">
+  <title data-i18n="title">老张的摄影作品</title>
+  <meta name="description" content="老张的摄影作品页。" data-i18n="description">
   <link rel="stylesheet" href="../css/site.css">
 </head>
-<body>
+<body data-page="photoz">
   <header class="site-header">
-    <nav class="site-nav" aria-label="页面导航">
-      <a class="brand" href="../index.html">老张的主页</a>
+    <nav class="site-nav" data-i18n-aria="navLabel" aria-label="页面导航">
+      <a class="brand" href="../index.html" data-i18n="brand">老张的主页</a>
       <ul class="nav-links">
-        <li><a href="../index.html">主页</a></li>
-        <li><a href="photohome.html">摄影入口</a></li>
-        <li><a href="#works">作品</a></li>
+        <li><a href="../index.html" data-i18n="navHome">主页</a></li>
+        <li><a href="photohome.html" data-i18n="navEntry">摄影入口</a></li>
+        <li><a href="#works" data-i18n="navWorks">作品</a></li>
       </ul>
+      <div class="language-switch">
+        <label for="language-select" data-i18n="langLabel">语言</label>
+        <select id="language-select">
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+        </select>
+      </div>
     </nav>
   </header>
 
@@ -23,14 +30,11 @@
     <section class="page-hero">
       <div>
         <span class="eyebrow">Gallery</span>
-        <h1>老张的摄影作品。</h1>
-        <p>
-          这里收录的是旅行与自然观察中的画面。页面以更大的图片卡片和更短更清楚的说明，
-          让观看体验更接近展览页，而不是普通资料页。
-        </p>
+        <h1 data-i18n="heroTitle">老张的摄影作品。</h1>
+        <p data-i18n="heroBody">这里收录的是旅行与自然观察中的画面。页面以更大的图片卡片和更短更清楚的说明，让观看体验更接近展览页，而不是普通资料页。</p>
         <div class="button-row">
-          <a class="button" href="#works">浏览作品</a>
-          <a class="button-secondary" href="photohome.html">返回摄影入口</a>
+          <a class="button" href="#works" data-i18n="heroPrimary">浏览作品</a>
+          <a class="button-secondary" href="photohome.html" data-i18n="heroSecondary">返回摄影入口</a>
         </div>
       </div>
       <div class="page-hero-visual" aria-hidden="true">
@@ -39,28 +43,28 @@
         </div>
         <div class="visual-badge">
           <strong>Quiet observation</strong>
-          <span>把风景和动物拍成更安静的视觉记录。</span>
+          <span data-i18n="badge">把风景和动物拍成更安静的视觉记录。</span>
         </div>
       </div>
     </section>
 
     <section class="section" id="works">
       <div class="section-head">
-        <h2>已收录作品。</h2>
-        <p>目前先展示两张照片，后续可以按时间、地点或主题继续扩充。</p>
+        <h2 data-i18n="worksTitle">已收录作品。</h2>
+        <p data-i18n="worksBody">目前先展示两张照片，后续可以按时间、地点或主题继续扩充。</p>
       </div>
       <div class="gallery-grid">
         <article class="gallery-card">
           <span class="tag">Toyama</span>
-          <h3>射水市海鸥</h3>
-          <p>拍摄于富山射水市的临海小镇。那里人烟不多，偶尔会有成群海鸥掠过，画面很安静。</p>
-          <img src="../image/indexbr.jpeg" alt="富山射水市海边飞鸟">
+          <h3 data-i18n="work1Title">射水市海鸥</h3>
+          <p data-i18n="work1Body">拍摄于富山射水市的临海小镇。那里人烟不多，偶尔会有成群海鸥掠过，画面很安静。</p>
+          <img src="../image/indexbr.jpeg" alt="富山射水市海边飞鸟" data-i18n-alt="work1Alt">
         </article>
         <article class="gallery-card">
           <span class="tag">Hokkaido</span>
-          <h3>屈斜路湖群鸟</h3>
-          <p>拍摄于北海道屈斜路湖。作者原先以为它们是天鹅，后来查到更接近当地常见的大型雁类，它们在湖边悠闲漂浮的样子很有趣。</p>
-          <img src="../image/屈斜路湖天鹅群_241227.JPG" alt="北海道屈斜路湖的群鸟">
+          <h3 data-i18n="work2Title">屈斜路湖群鸟</h3>
+          <p data-i18n="work2Body">拍摄于北海道屈斜路湖。作者原先以为它们是天鹅，后来查到更接近当地常见的大型雁类，它们在湖边悠闲漂浮的样子很有趣。</p>
+          <img src="../image/屈斜路湖天鹅群_241227.JPG" alt="北海道屈斜路湖的群鸟" data-i18n-alt="work2Alt">
         </article>
       </div>
     </section>
@@ -68,12 +72,13 @@
 
   <footer class="site-footer">
     <div class="footer-bar">
-      <span>老张的摄影作品</span>
+      <span data-i18n="footerBrand">老张的摄影作品</span>
       <div class="footer-links">
-        <a href="photohome.html">摄影入口</a>
-        <a href="../index.html">主页</a>
+        <a href="photohome.html" data-i18n="footerEntry">摄影入口</a>
+        <a href="../index.html" data-i18n="footerHome">主页</a>
       </div>
     </div>
   </footer>
+  <script src="../script.js"></script>
 </body>
 </html>

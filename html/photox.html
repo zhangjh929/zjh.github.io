@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>肖肖的摄影作品</title>
-  <meta name="description" content="肖肖的摄影作品页。">
+  <title data-i18n="title">肖肖的摄影作品</title>
+  <meta name="description" content="肖肖的摄影作品页。" data-i18n="description">
   <link rel="stylesheet" href="../css/site.css">
 </head>
-<body>
+<body data-page="photox">
   <header class="site-header">
-    <nav class="site-nav" aria-label="页面导航">
-      <a class="brand" href="../index.html">老张的主页</a>
+    <nav class="site-nav" data-i18n-aria="navLabel" aria-label="页面导航">
+      <a class="brand" href="../index.html" data-i18n="brand">老张的主页</a>
       <ul class="nav-links">
-        <li><a href="../index.html">主页</a></li>
-        <li><a href="photohome.html">摄影入口</a></li>
-        <li><a href="#status">当前状态</a></li>
+        <li><a href="../index.html" data-i18n="navHome">主页</a></li>
+        <li><a href="photohome.html" data-i18n="navEntry">摄影入口</a></li>
+        <li><a href="#status" data-i18n="navStatus">当前状态</a></li>
       </ul>
+      <div class="language-switch">
+        <label for="language-select" data-i18n="langLabel">语言</label>
+        <select id="language-select">
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+        </select>
+      </div>
     </nav>
   </header>
 
@@ -23,14 +30,11 @@
     <section class="page-hero">
       <div>
         <span class="eyebrow">Gallery</span>
-        <h1>肖肖的摄影作品。</h1>
-        <p>
-          这个页面已经保留好和整体风格一致的版式。等你之后把照片放进来时，
-          只需要继续往下添加作品卡片，不必重新调整页面框架。
-        </p>
+        <h1 data-i18n="heroTitle">肖肖的摄影作品。</h1>
+        <p data-i18n="heroBody">这个页面已经保留好和整体风格一致的版式。等你之后把照片放进来时，只需要继续往下添加作品卡片，不必重新调整页面框架。</p>
         <div class="button-row">
-          <a class="button" href="photohome.html">返回摄影入口</a>
-          <a class="button-secondary" href="../index.html">回到主页</a>
+          <a class="button" href="photohome.html" data-i18n="heroPrimary">返回摄影入口</a>
+          <a class="button-secondary" href="../index.html" data-i18n="heroSecondary">回到主页</a>
         </div>
       </div>
       <div class="page-hero-visual" aria-hidden="true">
@@ -39,26 +43,26 @@
         </div>
         <div class="visual-badge">
           <strong>Ready for new photos</strong>
-          <span>结构已准备好，后续只需补充图片与文字。</span>
+          <span data-i18n="badge">结构已准备好，后续只需补充图片与文字。</span>
         </div>
       </div>
     </section>
 
     <section class="section" id="status">
       <div class="section-head">
-        <h2>当前状态。</h2>
-        <p>先保留一个简洁的占位页，避免空白页面看起来像错误或未完成。</p>
+        <h2 data-i18n="statusTitle">当前状态。</h2>
+        <p data-i18n="statusBody">先保留一个简洁的占位页，避免空白页面看起来像错误或未完成。</p>
       </div>
       <div class="info-grid">
         <article class="info-card">
           <span class="tag">Status</span>
-          <h3>等待上传作品</h3>
-          <p>目前这页还没有正式照片，等素材准备好之后，我可以继续帮你排版成完整画廊。</p>
+          <h3 data-i18n="waitTitle">等待上传作品</h3>
+          <p data-i18n="waitBody">目前这页还没有正式照片，等素材准备好之后，我可以继续帮你排版成完整画廊。</p>
         </article>
         <article class="info-card">
           <span class="tag">Next</span>
-          <h3>可继续扩展</h3>
-          <p>支持继续加入拍摄地点、日期、图片说明，或者改成更偏作品集风格的瀑布流页面。</p>
+          <h3 data-i18n="nextTitle">可继续扩展</h3>
+          <p data-i18n="nextBody">支持继续加入拍摄地点、日期、图片说明，或者改成更偏作品集风格的瀑布流页面。</p>
         </article>
       </div>
     </section>
@@ -66,12 +70,13 @@
 
   <footer class="site-footer">
     <div class="footer-bar">
-      <span>肖肖的摄影作品</span>
+      <span data-i18n="footerBrand">肖肖的摄影作品</span>
       <div class="footer-links">
-        <a href="photohome.html">摄影入口</a>
-        <a href="../index.html">主页</a>
+        <a href="photohome.html" data-i18n="footerEntry">摄影入口</a>
+        <a href="../index.html" data-i18n="footerHome">主页</a>
       </div>
     </div>
   </footer>
+  <script src="../script.js"></script>
 </body>
 </html>

@@ -3,18 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>摄影作品</title>
-  <meta name="description" content="老张与肖肖的摄影作品入口页。">
+  <title data-i18n="title">摄影作品</title>
+  <meta name="description" content="老张与肖肖的摄影作品入口页。" data-i18n="description">
   <link rel="stylesheet" href="../css/site.css">
 </head>
-<body>
+<body data-page="photohome">
   <header class="site-header">
-    <nav class="site-nav" aria-label="页面导航">
-      <a class="brand" href="../index.html">老张的主页</a>
+    <nav class="site-nav" data-i18n-aria="navLabel" aria-label="页面导航">
+      <a class="brand" href="../index.html" data-i18n="brand">老张的主页</a>
       <ul class="nav-links">
-        <li><a href="../index.html">主页</a></li>
-        <li><a href="#photographers">摄影师</a></li>
+        <li><a href="../index.html" data-i18n="navHome">主页</a></li>
+        <li><a href="#photographers" data-i18n="navPhotographers">摄影师</a></li>
       </ul>
+      <div class="language-switch">
+        <label for="language-select" data-i18n="langLabel">语言</label>
+        <select id="language-select">
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+        </select>
+      </div>
     </nav>
   </header>
 
@@ -22,14 +29,11 @@
     <section class="page-hero">
       <div>
         <span class="eyebrow">Photo</span>
-        <h1>把照片放大，也把每一次观察放慢。</h1>
-        <p>
-          这个版块收录不同摄影者的作品。设计上延续首页的卡片节奏，让入口更清楚，
-          也让后续继续增加照片时，不需要重新推翻结构。
-        </p>
+        <h1 data-i18n="heroTitle">把照片放大，也把每一次观察放慢。</h1>
+        <p data-i18n="heroBody">这个版块收录不同摄影者的作品。设计上延续首页的卡片节奏，让入口更清楚，也让后续继续增加照片时，不需要重新推翻结构。</p>
         <div class="button-row">
-          <a class="button" href="#photographers">查看摄影师</a>
-          <a class="button-secondary" href="../index.html">回到主页</a>
+          <a class="button" href="#photographers" data-i18n="heroPrimary">查看摄影师</a>
+          <a class="button-secondary" href="../index.html" data-i18n="heroSecondary">回到主页</a>
         </div>
       </div>
       <div class="page-hero-visual" aria-hidden="true">
@@ -38,28 +42,28 @@
         </div>
         <div class="visual-badge">
           <strong>Travel & Nature</strong>
-          <span>从日常旅行中提取安静的画面感。</span>
+          <span data-i18n="badge">从日常旅行中提取安静的画面感。</span>
         </div>
       </div>
     </section>
 
     <section class="section" id="photographers">
       <div class="section-head">
-        <h2>选择一个入口。</h2>
-        <p>先进入摄影师页面，再浏览对应作品。这个结构也方便以后继续加入更多相册。</p>
+        <h2 data-i18n="photographersTitle">选择一个入口。</h2>
+        <p data-i18n="photographersBody">先进入摄影师页面，再浏览对应作品。这个结构也方便以后继续加入更多相册。</p>
       </div>
       <div class="card-grid">
         <article class="card">
           <span class="tag">Gallery</span>
-          <h3>老张</h3>
-          <p>目前已经上传了两张作品，包括射水市海鸥和屈斜路湖的群鸟照片。</p>
-          <a class="button-secondary" href="photoz.html">查看作品</a>
+          <h3 data-i18n="zTitle">老张</h3>
+          <p data-i18n="zBody">目前已经上传了两张作品，包括射水市海鸥和屈斜路湖的群鸟照片。</p>
+          <a class="button-secondary" href="photoz.html" data-i18n="zLink">查看作品</a>
         </article>
         <article class="card">
           <span class="tag">Gallery</span>
-          <h3>肖肖</h3>
-          <p>这个页面已经预留好位置，之后可以随时补充更多照片与说明文字。</p>
-          <a class="button-secondary" href="photox.html">进入页面</a>
+          <h3 data-i18n="xTitle">肖肖</h3>
+          <p data-i18n="xBody">这个页面已经预留好位置，之后可以随时补充更多照片与说明文字。</p>
+          <a class="button-secondary" href="photox.html" data-i18n="xLink">进入页面</a>
         </article>
       </div>
     </section>
@@ -67,12 +71,13 @@
 
   <footer class="site-footer">
     <div class="footer-bar">
-      <span>摄影作品</span>
+      <span data-i18n="footerBrand">摄影作品</span>
       <div class="footer-links">
-        <a href="../index.html">主页</a>
-        <a href="#photographers">摄影师</a>
+        <a href="../index.html" data-i18n="footerHome">主页</a>
+        <a href="#photographers" data-i18n="footerPhotographers">摄影师</a>
       </div>
     </div>
   </footer>
+  <script src="../script.js"></script>
 </body>
 </html>
